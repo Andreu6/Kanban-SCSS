@@ -1,0 +1,70 @@
+.todo {
+  background-color:  #FFFAD7;
+  border-radius: 20px;
+  font-family: cursive;
+  font-size: 20px;
+  transform: scale(var(--escala, 1));
+  transition: transform 0.25s;
+}
+
+.todo:hover {
+  cursor: pointer;
+--escala: 1.01;
+-webkit-box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.75);
+}
+
+.img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: 55px;
+  width: 400px;
+}
+
+.fecha_img {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.img_usuario {
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+}
+
+.centrar {
+  padding: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.orange {
+  background-color: #FEBE8C;
+  border-radius: 100px;
+  padding: 6px;
+}
+
+.red {
+  background-color: #FF9F9F;
+  border-radius: 100px;
+  padding: 6px;
+}
+
+.green {
+  background-color: #B6E2A1;
+  border-radius: 100px;
+  padding: 6px;
+}
+
+.grey {
+  background-color: #B2B2B2;
+  border-radius: 100px;
+  padding: 6px;
+}

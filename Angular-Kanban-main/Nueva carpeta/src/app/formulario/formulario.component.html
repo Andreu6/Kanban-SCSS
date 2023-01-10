@@ -1,0 +1,32 @@
+<body>
+  <form class="grid-container" [formGroup]="taskForm" (ngSubmit)="onSubmit()">
+    <mat-form-field>
+      <mat-label for="titulo">Titulo</mat-label>
+      <input type="text" matInput formControlName="titulo">
+      <mat-error *ngIf="taskForm.invalid">{{getErrorMessageTitulo()}}</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label for="lista">Estado</mat-label>
+      <mat-select matInput formControlName="lista">
+        <mat-option *ngFor="let estado of this.listas" value="{{estado}}">{{estado}}</mat-option>
+      </mat-select>
+      <mat-error *ngIf="taskForm.invalid">{{getErrorMessageLista()}}</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Date</mat-label>
+      <input matInput [matDatepicker]="picker" formControlName="fechaFin">
+      <mat-hint>MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label for="url">Url Imatge</mat-label>
+      <input type="url" matInput formControlName="img">
+    </mat-form-field>
+    <img class="boton-mas" src="../../assets/plus-solid.png" alt="boton de +">
+    <br>
+    <button id="color-save" type="submit" [disabled]="!taskForm.valid" (click)="onSubmit()">Guardar</button>
+    <br>
+    <button id="color-cancel" (click)="onSubmit()">Cancelar</button>
+  </form>
+</body>

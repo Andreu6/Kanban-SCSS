@@ -1,0 +1,40 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+/*   overflow-y: hidden; */
+  font-family: cursive;
+}
+
+.grid-container {
+  display: grid;
+  margin: 10rem 45rem;
+  padding: 3rem;
+  border-radius: 30px;
+  background-color: #FCDDB0;
+  box-shadow:
+    inset 0 -5em 5em rgba(0, 0, 0, 0.1),
+    0 0 0 3px rgb(255, 255, 255),
+    1em 1em 1em rgba(0, 0, 0, 0.3);
+
+}
+
+.boton-mas {
+  display: flex;
+  justify-items: end;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+#color-save {
+  background-color: white;
+  border-radius: 30px;
+  font-size: 15px;
+}
+
+#color-cancel {
+  background-color: #FF9F9F;
+  border-radius: 30px;
+  font-size: 15px;
+}
+

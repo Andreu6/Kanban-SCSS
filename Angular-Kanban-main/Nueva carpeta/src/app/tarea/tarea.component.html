@@ -1,0 +1,19 @@
+<div class="todo">
+  <div>
+    <img class="img" *ngIf="tareas.img != null" src="{{tareas.img}}">
+  </div>
+  <p class="centrar">
+    {{tareas.titulo}}
+  </p>
+  <div class="fecha_img" *ngIf="tareas.fechaFin != null">
+    <p [ngClass]="fechas(tareas.fechaFin)">
+      {{ DateString(tareas.fechaFin) }}
+    </p>
+    <div *ngFor="let usuario of tareas.usuarios">
+      <div>
+        <img class="img_usuario" src="{{usuario.img}}" matTooltip="{{usuario.nick}}">
+      </div>
+    </div>
+  </div>
+</div>
+

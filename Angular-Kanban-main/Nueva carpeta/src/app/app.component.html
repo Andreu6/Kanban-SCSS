@@ -1,0 +1,28 @@
+<div *ngIf="this.mostrarForm == true">
+  <div class="grid-container" *ngFor="let lista of listas">
+    <h3 class="lista">
+      {{ lista }}
+    </h3>
+    <div class="hijo" *ngFor="let tarea of tareas; index as i">
+      <app-tarea *ngIf="tarea.lista == lista" [tareas]="tareas[i]" (click)="mostrarform(tarea)"></app-tarea>
+    </div>
+    <div class="todo">
+      <p (click)="mostrarform()">
+        + Añadir Tarea Nueva
+      </p>
+    </div>
+  </div>
+</div>
+
+<app-formulario *ngIf="this.mostrarForm == false" 
+[mostrarForm]="this.mostrarForm"
+(evento) = "esconderform($event)"
+[recogerdatos] = "this.recogerdatos"
+(guardarForm) = "leerFormulario($event)"
+[tareas] = "this.tareas"
+
+>
+</app-formulario>
+
+
+
