@@ -1,5 +1,5 @@
-<body>
-  <form class="grid-container" [formGroup]="taskForm" (ngSubmit)="onSubmit()">
+<body class="body-form">
+  <form class="grid-container-form" [formGroup]="taskForm" (ngSubmit)="onSubmit()">
     <mat-form-field>
       <mat-label for="titulo">Titulo</mat-label>
       <input type="text" matInput formControlName="titulo">

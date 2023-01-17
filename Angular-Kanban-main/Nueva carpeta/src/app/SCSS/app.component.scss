@@ -1,36 +1,141 @@
-.grid-container {
-    display: inline-grid;
-    margin: 6rem;
-    padding: 20px;
+.body-form {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: cursive;
+
+  .grid-container-form {
+    display: grid;
+    margin: 10rem 45rem;
+    padding: 3rem;
     border-radius: 30px;
-    background-color: #FCDDB0;
-    box-shadow:
-      inset 0 -5em 5em rgba(0, 0, 0, 0.1),
-      0 0 0 3px rgb(255, 255, 255),
-      1em 1em 1em rgba(0, 0, 0, 0.3);
-      .lista {
-        text-align: center;
-        font-size: 25px;
-      }
-      .hijo {
-        padding-bottom: 5px;
-      }
-      .todo {
-        background-color:  #FFFAD7;
-        border-radius: 20px;
-        margin-top: 15px;
-        text-align: center;
-        font-family: cursive;
-        font-size: 20px;
-        transform: scale(var(--escala, 1));
-        transition: transform 0.25s;
-        &:hover {
-            cursor: pointer;
-            --escala: 1.01;
-            -webkit-box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.75);
-            -moz-box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.75);
-            box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.75);
-            }
-      }
-        
+    background-color: #fcddb0;
+    box-shadow: inset 0 -5em 5em rgba(0, 0, 0, 0.1), 0 0 0 3px rgb(255, 255, 255), 1em 1em 1em rgba(0, 0, 0, 0.3);
+
+    .boton-mas {
+      display: flex;
+      justify-items: end;
+      height: 1.5rem;
+      width: 1.5rem;
+    }
+
+    #color-save {
+      background-color: white;
+      border-radius: 30px;
+      font-size: 15px;
+    }
+
+    #color-cancel {
+      background-color: #ff9f9f;
+      border-radius: 30px;
+      font-size: 15px;
+    }
   }
+}
+
+.grid-container {
+  display: inline-grid;
+  margin: 6rem;
+  padding: 20px;
+  border-radius: 30px;
+  background-color: #fcddb0;
+  box-shadow: inset 0 -5em 5em rgba(0, 0, 0, 0.1), 0 0 0 3px rgb(255, 255, 255), 1em 1em 1em rgba(0, 0, 0, 0.3);
+
+  .lista {
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .hijo {
+    padding-bottom: 5px;
+  }
+
+  .todo {
+    background-color: #fffad7;
+    border-radius: 20px;
+    margin-top: 15px;
+    text-align: center;
+    font-family: cursive;
+    font-size: 20px;
+    transform: scale(var(--escala, 1));
+    transition: transform 0.25s;
+
+    &:hover {
+      cursor: pointer;
+      --escala: 1.01;
+      -webkit-box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.75);
+    }
+  }
+}
+
+.todo-tarea {
+  background-color: #fffad7;
+  border-radius: 20px;
+  font-family: cursive;
+  font-size: 20px;
+  transform: scale(var(--escala, 1));
+  transition: transform 0.25s;
+
+  &:hover {
+    cursor: pointer;
+  --escala: 1.01;
+  -webkit-box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.75);
+  }
+
+  .img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 55px;
+    width: 400px;
+  }
+
+  .centrar {
+    padding: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .fecha_img {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    .orange {
+      background-color: #FEBE8C;
+      border-radius: 100px;
+      padding: 6px;
+    }
+    
+    .red {
+      background-color: #FF9F9F;
+      border-radius: 100px;
+      padding: 6px;
+    }
+    
+    .green {
+      background-color: #B6E2A1;
+      border-radius: 100px;
+      padding: 6px;
+    }
+    
+    .grey {
+      background-color: #B2B2B2;
+      border-radius: 100px;
+      padding: 6px;
+    }
+  }
+
+  .img_usuario {
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+  }
+}

@@ -1,12 +1,11 @@
-* {
+.body-form {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-/*   overflow-y: hidden; */
   font-family: cursive;
 }
 
-.grid-container {
+.grid-container-form {
   display: grid;
   margin: 10rem 45rem;
   padding: 3rem;
@@ -16,7 +15,6 @@
     inset 0 -5em 5em rgba(0, 0, 0, 0.1),
     0 0 0 3px rgb(255, 255, 255),
     1em 1em 1em rgba(0, 0, 0, 0.3);
-
 }
 
 .boton-mas {

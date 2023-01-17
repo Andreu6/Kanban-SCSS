@@ -8,7 +8,7 @@ import { Usuario } from '../models/usuario-model';
 @Component({
   selector: 'app-formulario',
   templateUrl: './formulario.component.html',
-  styleUrls: ['./formulario.component.css']
+  styleUrls: ['../appstyle.component.css']
 })
 
 

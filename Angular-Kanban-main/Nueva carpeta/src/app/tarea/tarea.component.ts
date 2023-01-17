@@ -13,7 +13,7 @@ import {
 @Component({
   selector: 'app-tarea',
   templateUrl: './tarea.component.html',
-  styleUrls: ['./tarea.component.css']
+  styleUrls: ['../appstyle.component.css']
 })
 export class TareaComponent implements OnInit {
 

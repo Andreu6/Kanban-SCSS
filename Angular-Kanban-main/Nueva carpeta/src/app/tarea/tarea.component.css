@@ -1,4 +1,4 @@
-.todo {
+.todo-tarea {
   background-color:  #FFFAD7;
   border-radius: 20px;
   font-family: cursive;
@@ -7,7 +7,7 @@
   transition: transform 0.25s;
 }
 
-.todo:hover {
+.todo-tarea:hover {
   cursor: pointer;
 --escala: 1.01;
 -webkit-box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.75);
